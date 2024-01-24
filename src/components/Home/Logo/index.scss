@@ -1,11 +1,11 @@
 .logo-container {
-    z-index: 0;
+    z-index: -9999;
     width: 400px;
     height: 609px;
     opacity: 0;
     position: absolute;
     top: 0;
-    right: 15%;
+    right: 20%;
     bottom: 0;
     left: auto;
     margin: auto;
@@ -24,14 +24,36 @@
         bottom: auto;
         left: 0;
         margin: auto;
-        width: 100%;
+        width: 150%;
         opacity: 0;
-        transform: rotateZ(30deg);
-        z-index: 1;
+        transform: rotateZ(-30deg);
+        animation: rotateCounterclockwise 15s infinite linear;
+    }
+    
+    @keyframes rotateCounterclockwise {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(-360deg);
+        }
+    }
+
+    @keyframes rotateCounterclockwise {
+        0%, 100% {
+            transform: rotateZ(0deg);
+        }
+        50% {
+            transform: rotateZ(-60deg);
+        }
     }
 }
 
-.svg-container {
-    stroke: #ffd700;
-    stroke-width: 10;
+@media (max-width: 768px) {
+    /* Estilos específicos para telas com largura máxima de 768 pixels (telas móveis) */
+    .logo-container {
+        width: 80%; /* Você pode ajustar conforme necessário */
+        right: 10%; /* Você pode ajustar conforme necessário */
+        left: 10%; /* Você pode ajustar conforme necessário */
+    }
 }

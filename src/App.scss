@@ -1,7 +1,6 @@
 $primary-color:#ffd700;
 
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -9,8 +8,8 @@ $primary-color:#ffd700;
 }
 
 @font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  font-family: 'Cousine';
+  src: url('./assets/fonts/Cousine-Regular.ttf') format('ttf');
 }
 
 @font-face {
@@ -25,7 +24,6 @@ textarea {
 
 .loader-active {
   display: block;
-  position: absolute;
   left: 0;
   right: 0;
   margin: auto;
@@ -35,4 +33,29 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+}
+
+.loader {
+  width: 80px;
+  height: 40px;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  overflow: hidden;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -100%;
+  background: 
+    radial-gradient(farthest-side,#ffd738 80%,#0000) left 70% top    20%/15px 15px,
+    radial-gradient(farthest-side,#020308 92%,#0000) left 65% bottom 19%/12px 12px,
+    radial-gradient(farthest-side,#ecfefe 92%,#0000) left 70% bottom 20%/15px 15px,
+    linear-gradient(#9eddfe 50%,#020308 0);
+  background-repeat: no-repeat;
+  animation: l5 2s infinite;
+}
+@keyframes l5 {
+  0%,20%   {transform: rotate(0)}
+  40%,60%  {transform: rotate(.5turn)}
+  80%,100% {transform: rotate(1turn)}
 }

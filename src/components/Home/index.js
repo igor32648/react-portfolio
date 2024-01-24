@@ -1,4 +1,4 @@
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/bird-svgrepo-com.png'
 import { Link } from 'react-router-dom'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+    const nameArray = ['i', 'g', 'o', 'r', ' ', 'c', 'a', 'r', 'l', 'o', 's']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', ';']
     
     useEffect(() => {
@@ -35,7 +35,7 @@ const Home = () => {
                         <AnimatedLetters letterClass={letterClass}
                         strArray={jobArray} idx={22} />
                     </h1>
-                    <h2> Frontend Developer / JavaScript Expert </h2>
+                    <h2> Frontend Developer / JavaScript and Java Expert </h2>
                     <Link to='/contact' className='flat-button'>CONTACT ME</Link>
                 </div>
                 <Logo />

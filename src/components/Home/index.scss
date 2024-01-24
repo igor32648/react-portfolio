@@ -1,4 +1,5 @@
 .home-page {
+    z-index: 1;
     .text-zone {
         position: absolute;
         left: 10%;
@@ -19,20 +20,21 @@
 
         &:before {
             content: '<h1>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #ffd700;
-            font-size: 18px;
+            font-family: 'Courier';
+            color: #FFEEDB;
+            font-size: 15px;
             position: absolute;
             margin-top: -40px;
             left: 15px;
             opacity: 0.6;
+            animation: fadeIn 1s 1.7s backwards;
         }
 
         &:after {
             content: '<h1/>';
-            font-family: La Belle Aurore, cursive;
-            color:#ffd700;
-            font-size: 18px;
+            font-family: 'Courier';
+            color:#FFEEDB;
+            font-size: 15px;
             position: absolute;
             margin-top: 18px;
             margin-left: 20px;
@@ -50,7 +52,7 @@
     }
 
     h2 {
-        color: #8d8d8d;
+        color: #FFEEDB;
         margin-top: 20px;
         font-weight: 400;
         font-size: 11px;
@@ -60,21 +62,21 @@
     }
 
     .flat-button {
-        color: #ffd700;
+        color: #57CC99;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #ffd700;
+        border: 1px solid #57CC99;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover {
-            background: #ffd700;
+            background: #57CC99;
             color: #333;
         }
     }

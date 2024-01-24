@@ -10,15 +10,17 @@
 }
 
 .tags {
-    color: #ffd700;
+    color: #FFEEDB;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
     left: 120px;
-    font-size: 18px;
-    font-family: 'La Belle Aurore';
+    font-size: 15px;
+    font-family: 'Cousine';
+    animation: fadeIn 1s 1.7s backwards;
 }
 
+.top-tag-html,
 .bottom-tag-html {
     margin-left: -20px;
 }
@@ -43,7 +45,7 @@
     h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: #57CC99;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -52,25 +54,29 @@
 
         &::before {
             content: '<h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
+            font-family: 'Cousine';
+            font-size: 15px;
             position: absolute;
             margin-top:  -10px;
             left: -10px;
             opacity: 0.6;
             line-height: 18px;
+            color: #FFEEDB;
+            animation: fadeIn 1s 1.7s backwards;
         }
 
         &::after {
             content: '</h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
+            font-family: 'Cousine';
+            font-size: 15px;
             line-height: 18px;
             position: absolute;
             left: -30px;
             bottom: -20px;
             margin-left: 20px;
             opacity: 0.6;
+            color: #FFEEDB;
+            animation: fadeIn 1s 1.7s backwards;
         }
     }
 
@@ -115,7 +121,7 @@
 
 .info-map {
     position: absolute;
-    background-color: #000;
+    background-color: #011638;
     top: 50px;
     right: 30%;
     z-index: 999999;
@@ -133,7 +139,7 @@
         font-size: 16px;
         display: block;
         padding-top: 20px;
-        color: #ffd700;
+        color: #57CC99;
     }
 }
 
